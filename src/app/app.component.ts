@@ -23,10 +23,7 @@ export class AppComponent implements OnInit {
 
   loadUsers() {
     this.userService.loadUsers().subscribe(users => {
-      this.users = users.map( (el) => {
-        console.log(el)
-        return el.fields
-      });
+      this.users = users.map(el => el.fields);
     });
   }
 }
