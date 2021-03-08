@@ -1,0 +1,36 @@
+<form [formGroup]="userForm" class="form-horizontal">
+  <div class="row">
+    <div class="col-sm-12 mb-4">
+      <div class="card">
+        <div class="card-header">User Card</div>
+        <div class="card-body">
+          <img
+            class="card-img-top mb-2"
+            [src]="user.imageUrl"
+            alt="Card image cap"
+          />
+          <input
+            formControlName="name"
+            type="text"
+            class="card-text form-control mb-2"
+          />
+          <input
+            formControlName="address"
+            type="text"
+            class="card-text form-control mb-2"
+          />
+          <input
+            formControlName="city"
+            type="text"
+            class="card-text form-control mb-2"
+          />
+          <input
+            formControlName="phone"
+            type="text"
+            class="card-text form-control mb-2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
